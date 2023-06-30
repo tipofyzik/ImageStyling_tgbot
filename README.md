@@ -1,4 +1,4 @@
-# ImageStyling_telegram_bot
+# ImageStyling telegram bot
 
 ## 1. Выбор сетки для бота
 Была выбрана нейросеть MSG-Net в реализации от zhanghang1989.
