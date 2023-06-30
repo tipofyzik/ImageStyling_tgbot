@@ -13,4 +13,5 @@ MSG-Net имеет следующие преимущества перед дру
 
 
 Ссылки:
+
 MSG-Net:  https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
