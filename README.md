@@ -14,3 +14,6 @@ MSG-Net имеет следующие преимущества перед дру
 
 
 MSG-Net:  https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
+
+
+## 2. Телеграм бот
