@@ -11,7 +11,4 @@ MSG-Net имеет следующие преимущества перед дру
 По этой причине используется Image.LANCZOS, результат применения которого как минимум не уступает предыдущему методу.
 
 
-
-Ссылки:
-
 MSG-Net:  https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
