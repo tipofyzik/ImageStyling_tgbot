@@ -22,3 +22,7 @@ MSG-Net:  https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
 
 ## 2. Телеграм бот
 Бот создан при помощи @BotFather. Библиотека, используемая для работы с ним - aiogram.
+
+При написании бота было множество ошибок. В конце этого раздела будут даны ссылки на решения всех этих ошибок. Отмечены они будут как в ноутбуке "Ошибка [номер]".
+
+Ошибка [1]: https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer/issues/21
