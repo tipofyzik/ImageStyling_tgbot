@@ -19,18 +19,6 @@ MSG-Net имеет следующие преимущества перед дру
 
 MSG-Net:  https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
 
-Ниже показаны изображения, полученные при при разных размерах изображения (функция transform_image перед инициализацией бота).
-
-![512](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/a4e9c572-865b-404a-a583-dec469baa5c8)
-![768](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/bf84ae68-e18d-46cd-877f-83404e4242a9)
-![1024](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/5cd05e38-2327-4c98-b856-cbfb66490dcc)
-![1536](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/cee93a61-0bf4-4662-9430-05fccdac9d89)
-![2048](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/62202127-f601-4a6a-a9e1-03694921befa)
-
-
-
-
-
 ## 2. Телеграм бот
 Бот создан при помощи @BotFather. Библиотека, используемая для работы с ним - aiogram.
 
