@@ -19,7 +19,8 @@ MSG-Net имеет следующие преимущества перед дру
 
 MSG-Net:  https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
 
-Ниже показаны изображения, полученные при при разных размерах изображения (функция transform_image перед инициализацией бота)
+Ниже показаны изображения, полученные при при разных размерах изображения (функция transform_image перед инициализацией бота).
+
 ![512](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/a4e9c572-865b-404a-a583-dec469baa5c8)
 ![768](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/bf84ae68-e18d-46cd-877f-83404e4242a9)
 ![1024](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/5cd05e38-2327-4c98-b856-cbfb66490dcc)
