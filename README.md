@@ -23,8 +23,7 @@ MSG-Net имеет следующие преимущества перед дру
 Также был подправлен ввод и вывод тестовых изображений, однако это никак не повлияло на сеть и функции обработки изображений и данное изменение сделано лишь для удобства проведения тестов.
 
 
-MSG-Net:
-
+MSG-Net:/n
 [1] https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
 [2] https://www.researchgate.net/figure/An-overview-of-MSG-Net-Multi-style-Generative-Network-The-transformation-network_fig1_315489372
 
