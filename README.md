@@ -9,7 +9,7 @@
 Ниже приведены комментарии касательно выбора нейросети, процесса создания бота и деталей его использования и, наконец, небольшая демонстрация результатов.
 
 ## 1. Выбор сетки для бота
-Была выбрана нейросеть MSG-Net в реализации от zhanghang1989.
+Была выбрана нейросеть MSG-Net в реализации от zhanghang1989 [1].
 MSG-Net имеет следующие преимущества перед другими аналогами (CycleGan или Deep Photo Style Transfer) в задаче переноса стиля с одного изображения на другое:
   1. Нейросеть имеет достаточно хорошее качество переноса стиля
   2. Реализация достаточно понятна и лаконична, что позволяет без особых усилий использовать msg-net
@@ -24,8 +24,8 @@ MSG-Net имеет следующие преимущества перед дру
 
 
 MSG-Net:
-https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
-https://www.researchgate.net/figure/An-overview-of-MSG-Net-Multi-style-Generative-Network-The-transformation-network_fig1_315489372
+[1] https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
+[2] https://www.researchgate.net/figure/An-overview-of-MSG-Net-Multi-style-Generative-Network-The-transformation-network_fig1_315489372
 
 ## 2. Телеграм бот
 Бот создан при помощи @BotFather. Библиотека, используемая для работы с ним - aiogram.
