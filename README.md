@@ -72,4 +72,4 @@ path_to_dockerfile - путь к папке, где лежит Dockerfile
 
 ## 4. Результаты и условности
 Вот пара результатов использования бота: 
-![lion](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/c404be92-4ee9-4bc1-b002-28367121238a)  ![res1](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/08699f67-1ae9-4ad5-9c74-caa8a15b8794)
+
