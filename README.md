@@ -52,12 +52,9 @@ MSG-Net:
 **docker push dockerhub_username/your_image_name**  
 Первая строчка создаёт новое имя для нашего образа - это нужно для загрузки на docker-hub, которая происзодит после введения второй строчки. По завершении загрузки, Desctop Docker, как и консоль нам больше не потребуются.
 
-Теперь всё, что нужно - docker playground [5]. Заходим на сайт, выбираем Lab Enviroment:  
+Теперь всё, что нужно - docker playground [5] - сайт от docker.com, позволяющий запускать бесплатную 4-хчасовую сессию и, на нашу удачу, дающий достаточное количество ресурсов для работы бота. Заходим на сайт, выбираем Lab Enviroment:  
 ![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/13d41a2e-242a-4031-b4c6-7d32a7c29718)  
-
-Логинимся на сайте при помощи docker.com. Нам доступна 4-хчасовая сессия, в которой мы и задеплоим нашего бота.  
-![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/2ff6c60c-eb58-45f2-830f-fc3230a02433)  
-Теперь нам нужно лишь нажать "add new instanсe" и ввести команду:  
+Логинимся, нажимаем "start". Теперь нам нужно лишь нажать "add new instanсe" и ввести команду:  
 **docker run -it dockerhub_username/your_image_name**  
 После чего наш образ c docker hub загрузится и бот должен работать
 
