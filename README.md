@@ -44,7 +44,7 @@ MSG-Net:
 Создание докер-контейнера и его последующее размещение на сервере реализовано на ПО Docker [1]. Давайте поближе посмотрим на процесс развёртывания сервера:
 
 1. Сначала скачиваем Docker Decktop для вашей операционной системы [2].  
-2. Для проекта пишем 2 файла: с зависимостями вашего бота -requirements.txt, и непосредственно сам Dockerfile со всеми необходимыми командами. Последний можно написать в VSCode, установив расширение "Docker" от Microsoft.
+2. Для проекта пишем 2 файла: с зависимостями вашего бота -requirements.txt, и непосредственно сам Dockerfile со всеми необходимыми командами. Последний можно написать в VSCode, установив расширение "Docker" от Microsoft. [3]
 ![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/f74565bf-d25c-4dc4-866c-aa56df11ca37)  
 4. В консоли пишем следующую команду: docker build -t <желаемое_имя_образа> <папка_где_лежит_Dockerfile>. Перед этим не забудьте перейти в директорию, где находится ваш проект и докерфайл.
 
@@ -52,6 +52,7 @@ MSG-Net:
 Источники:  
 [1] https://ru.wikipedia.org/wiki/Docker  
 [2] https://www.docker.com/  
-[3] https://hub.docker.com/  
-[4] https://www.docker.com/play-with-docker/  
-[5] ChatGPT 
+[3] https://code.visualstudio.com/docs/containers/overview#:~:text=compose.yml%20files.-,Generating%20Docker%20files,add%20them%20to%20your%20workspace.
+[4] https://hub.docker.com/  
+[5] https://www.docker.com/play-with-docker/  
+[6] ChatGPT 
