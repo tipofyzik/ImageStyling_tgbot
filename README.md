@@ -71,5 +71,8 @@ path_to_dockerfile - путь к папке, где лежит Dockerfile
 [6] ChatGPT 
 
 ## 4. Результаты и условности
-Вот пара результатов использования бота: 
+Вот пара результатов использования бота:  
+![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/43092759-6ba8-495e-9619-17966e5cdebc)  
+![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/b3fe0a1c-8fdb-4317-800e-5c111e5b0bc7)  
+
 
