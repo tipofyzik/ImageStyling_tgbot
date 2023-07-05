@@ -55,7 +55,7 @@ MSG-Net:
 ![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/f74565bf-d25c-4dc4-866c-aa56df11ca37)  
 3. В консоли переходим в директорию, где находится ваш проект и докерфайл. Затем пишем следующую команду:  
 **docker build -t your_image_name path_to_dockerfile**.  
-После ввода команды начнётся процесс сборки docker-образа. После завершения сборки вы сможете протестировать работу образа, запустив его при помощи команды: **docker run your_image_name**.
+После ввода команды начнётся процесс сборки docker-образа. После завершения сборки вы сможете протестировать работу образа, запустив его при помощи команды:  **docker run your_image_name**.
 4. Далее нас интересует выгрузка docker-образа. Заходим на docker-hub [4], проходим регистрацию и входим в аккаунт. Возвращаемся в нашу консоль и пишем **docker login** для входа в аккаунт, далее пишем следующие команды:  
 **docker tag your_image_name dockerhub_username/your_image_name**  
 **docker push dockerhub_username/your_image_name**  
