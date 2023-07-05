@@ -39,6 +39,6 @@ MSG-Net:
 [1] https://mastergroosha.github.io/aiogram-3-guide/  
 [2] https://habr.com/ru/articles/732136/  
 [3] https://habr.com/ru/articles/733732/  
-
+[4] ChatGPT  
 
 ## 3. Докер и деплой
