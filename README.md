@@ -52,7 +52,7 @@ MSG-Net:
 Источники:  
 [1] https://ru.wikipedia.org/wiki/Docker  
 [2] https://www.docker.com/  
-[3] https://code.visualstudio.com/docs/containers/overview#:~:text=compose.yml%20files.-,Generating%20Docker%20files,add%20them%20to%20your%20workspace.
+[3] https://code.visualstudio.com/docs/containers/overview#:~:text=compose.yml%20files.-,Generating%20Docker%20files,add%20them%20to%20your%20workspace.  
 [4] https://hub.docker.com/  
 [5] https://www.docker.com/play-with-docker/  
 [6] ChatGPT 
