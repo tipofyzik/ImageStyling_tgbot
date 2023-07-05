@@ -61,9 +61,9 @@ MSG-Net:
 **docker run -it dockerhub_username/your_image_name**  
 После чего наш образ загрузится и бот должен работать
 
-your_image_name - имя вашего докер-образа
-dockerhub_username - ник в docker hub
-path_to_dockerfile - путь к папке, где лежит Dockerfile
+*your_image_name - имя вашего докер-образа  
+dockerhub_username - ник в docker hub  
+path_to_dockerfile - путь к папке, где лежит Dockerfile*  
 
 Источники:  
 [1] https://ru.wikipedia.org/wiki/Docker  
