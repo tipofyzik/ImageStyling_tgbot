@@ -36,9 +36,8 @@ MSG-Net:
 Также, для повышения качества работы MSG-Net я изменил размер изображений при их обработке (функция transform_image) с 512 (как в ноутбуке) на 1024. Если есть желание увеличить скорость обработки и выдачи изображений - измените значение в коде. Оно находится в начале функции result. 
 
 Источники:  
-[1] https://mastergroosha.github.io/aiogram-3-guide/  
-[2] https://habr.com/ru/articles/732136/  
-[3] https://habr.com/ru/articles/733732/  
-[4] ChatGPT  
+[1] https://docs.aiogram.dev/en/latest/  
+[2] https://mastergroosha.github.io/aiogram-3-guide/  
+[3] ChatGPT  
 
 ## 3. Докер и деплой
