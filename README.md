@@ -67,7 +67,7 @@ MSG-Net:
 ![image](https://github.com/tipofyzik/ImageStyling_tgbot/assets/84290230/13d41a2e-242a-4031-b4c6-7d32a7c29718)  
 Логинимся, нажимаем "start". Теперь нам нужно лишь нажать "add new instance" и ввести команду:  
 **docker run -it dockerhub_username/your_image_name**  
-После чего наш образ c docker hub загрузится и бот должен работать
+После чего наш образ c docker hub загрузится и бот запустится.
 
 your_image_name - имя вашего докер-образа  
 dockerhub_username - ник в docker hub  
