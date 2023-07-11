@@ -1,6 +1,7 @@
 from tgbot.MSGNet import *
 
 from aiogram import Bot, Dispatcher, executor, types
+import shutil
 import os
 
 
@@ -17,7 +18,7 @@ model.load_state_dict(model_dict, False)
 
 # Теперь необходимо реализовать функцию преобразования изображения
 # Делаем то же самое, что и в ноутбуке во время тестов
-def transform_image(original_image, style_image, image_size):
+async def transform_image(original_image, style_image, image_size, path):
    content_image = tensor_load_rgbimage(original_image, size=image_size,keep_asp=True).unsqueeze(0)
    style = tensor_load_rgbimage(style_image, size=image_size).unsqueeze(0)
    style = preprocess_batch(style)
@@ -25,9 +26,9 @@ def transform_image(original_image, style_image, image_size):
    content_image = Variable(preprocess_batch(content_image))
    model.setTarget(style_v)
    output = model(content_image)
-   tensor_save_bgrimage(output.data[0], 'result.jpg', False)
+   tensor_save_bgrimage(output.data[0], f'{path}/result.jpg', False)
 
-
+# Для работы асинхронности необходим пул потоков
 
 # Инициализация бота
 with open('API.txt', 'r') as file:
@@ -120,13 +121,13 @@ async def save_image(message):
       await message.answer("""Не был указан тип фотографии!
 Пожалуйста, выберите тип фотографии, введя соответствующую команду, и затем загрузите фото заново.""")
    elif original:
-      await message.photo[-1].download(destination_file='original_image.jpg')
+      await message.photo[-1].download(destination_file=f'{message.from_user.username}/original_image.jpg')
       await message.answer("Оригинал получен!")
       x=True
       if x and y:
          await message.answer("Ура, все фотографии есть!", reply_markup=keyboard())
    elif style:
-      await message.photo[-1].download(destination_file='style_image.jpg')
+      await message.photo[-1].download(destination_file=f'{message.from_user.username}/style_image.jpg')
       await message.answer("Стиль получен!")
       y=True
       if x and y:
@@ -147,19 +148,16 @@ async def result(message: types.Message):
       await message.answer("Стиль не был получен! Чтобы загрузить его, воспользуйся /style_image.")
    else:
       await message.answer("Подождите, идёт обработка изображения...")
-      transform_image('original_image.jpg', 'style_image.jpg', image_size=image_size)
-      await bot.send_photo(chat_id=message.chat.id, photo=open('result.jpg', 'rb'), 
+      await transform_image(f'{message.from_user.username}/original_image.jpg', 
+                     f'{message.from_user.username}/style_image.jpg', image_size=image_size, path=f'{message.from_user.username}')
+      await bot.send_photo(chat_id=message.chat.id, photo=open(f'{message.from_user.username}/result.jpg', 'rb'), 
                            caption='Ваша изменённая фотография!', reply_markup=keyboard())
 
-# Функция возврата в меню start
+# Функция возврата в меню start и очищение файлов
 @dp.message_handler(commands=['restart'])
 async def cancel_act(message: types.Message):
-   if os.path.exists('original_image.jpg'):   
-      os.remove('original_image.jpg')
-   if os.path.exists('style_image.jpg'):      
-      os.remove('style_image.jpg')
-   if os.path.exists('result.jpg'):   
-      os.remove('result.jpg')
+   if os.path.exists(f'{message.from_user.username}'):
+      shutil.rmtree(f'{message.from_user.username}', ignore_errors=True)
    await message.answer("Загруженные изображения, если они были, удалены! Начнём заново.")
    await send_welcome(message)
 
